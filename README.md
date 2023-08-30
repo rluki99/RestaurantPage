@@ -1,0 +1,2 @@
+# RestaurantPage
+JS DOM creating
