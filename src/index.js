@@ -1,4 +1,4 @@
-import { testModule } from './moduleTest'
+import createHome from './pages/home'
 import './styles/main.scss'
 
-testModule()
+// createHome()
