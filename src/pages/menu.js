@@ -1,4 +1,5 @@
 import createNav from '../modules/nav'
+import burger from '../assets/burger-bgc.jpg'
 
 const createMenu = () => {
 	createNav()
