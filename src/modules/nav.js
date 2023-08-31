@@ -1,5 +1,5 @@
 const createNav = () => {
-  const container = document.querySelector('.container')
+  const container = document.getElementById('container')
   const nav = document.createElement('nav')
   nav.classList.add('nav')
 

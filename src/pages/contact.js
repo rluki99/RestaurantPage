@@ -3,7 +3,7 @@ import createNav from "../modules/nav"
 const createContact = () => {
     createNav()
 
-    const container = document.querySelector('.container')
+    const container = document.getElementById('container')
 
     const contact = document.createElement('section')
     contact.classList.add('contact','section')

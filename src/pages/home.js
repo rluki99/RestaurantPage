@@ -2,7 +2,7 @@ import createNav from "../modules/nav";
 
 const createHome = () => {
     createNav()
-    const container = document.querySelector('.container')
+    const container = document.getElementById('container')
 
     const header = document.createElement('header')
     header.classList.add('header')

@@ -24,10 +24,12 @@ body {
 .wrapper {
 	max-width: 1200px;
 	margin: 0 auto;
-	background-color: rgb(228, 227, 214);
+	background-color: rgba(228, 227, 214, 0.95);
 	padding-inline: 100px;
 	padding-block: 30px;
 	border-radius: 30px;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+	animation: appear 0.8s ease-in-out;
 
 	@include view(tablet) {
 		padding-inline: 70px;
@@ -47,6 +49,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	position: relative;
+	transition: 0.5s;
 }
 
 .nav {
@@ -101,6 +104,7 @@ body {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	animation: appear 0.8s ease-in-out;
 
 	&__texts {
 		width: fit-content;
@@ -176,7 +180,7 @@ body {
 	}
 
 	&__dishes {
-		margin-block: 30px;
+		margin-block: 65px;
 		display: flex;
 		flex-direction: column;
 		gap: 40px;
@@ -320,4 +324,13 @@ body {
 	&__box-info {
 		font-size: 22px;
 	}
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

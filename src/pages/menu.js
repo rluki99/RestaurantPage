@@ -3,7 +3,7 @@ import createNav from '../modules/nav'
 const createMenu = () => {
 	createNav()
 
-	const container = document.querySelector('.container')
+	const container = document.getElementById('container')
 
 	const menu = document.createElement('section')
 	menu.classList.add('menu', 'section')
