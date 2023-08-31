@@ -24,22 +24,22 @@ const createMenu = () => {
 
 	const dish1 = document.createElement('div')
     dish1.classList.add('menu__dish')
-	dish1.innerHTML = `<img src="/burger-bgc.jpg" alt="" class="menu__dish-img">
+	dish1.innerHTML = `<img src="images/burger-bgc.jpg" alt="" class="menu__dish-img">
     <p class="menu__dish-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur sequi amet assumenda corrupti eum pariatur ea possimus, nesciunt deserunt natus?</p>`
 
 	const dish2 = document.createElement('div')
     dish2.classList.add('menu__dish')
-	dish2.innerHTML = `<img src="/burger-bgc.jpg" alt="" class="menu__dish-img menu__dish-img--right">
+	dish2.innerHTML = `<img src="images/burger-bgc.jpg" alt="" class="menu__dish-img menu__dish-img--right">
     <p class="menu__dish-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur sequi amet assumenda corrupti eum pariatur ea possimus, nesciunt deserunt natus?</p>`
 
 	const dish3 = document.createElement('div')
     dish3.classList.add('menu__dish')
-	dish3.innerHTML = `<img src="/burger-bgc.jpg" alt="" class="menu__dish-img">
+	dish3.innerHTML = `<img src="images/burger-bgc.jpg" alt="" class="menu__dish-img">
     <p class="menu__dish-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur sequi amet assumenda corrupti eum pariatur ea possimus, nesciunt deserunt natus?</p>`
 
 	const dish4 = document.createElement('div')
     dish4.classList.add('menu__dish')
-	dish4.innerHTML = `<img src="/burger-bgc.jpg" alt="" class="menu__dish-img menu__dish-img--right">
+	dish4.innerHTML = `<img src="images/burger-bgc.jpg" alt="" class="menu__dish-img menu__dish-img--right">
     <p class="menu__dish-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur sequi amet assumenda corrupti eum pariatur ea possimus, nesciunt deserunt natus?</p>`
 
     container.appendChild(menu)

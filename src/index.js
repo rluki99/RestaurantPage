@@ -3,7 +3,6 @@ import createMenu from './pages/menu'
 import createContact from './pages/contact'
 
 import './styles/main.scss'
-import burger from './assets/burger-bgc.jpg'
 
 const container = document.getElementById('container')
 
