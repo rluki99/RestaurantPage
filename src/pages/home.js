@@ -16,7 +16,7 @@ const createHome = () => {
 
     const title = document.createElement('h1')
     title.classList.add('header__texts-title')
-    title.textContent = 'NOCTURNE'
+    title.textContent = 'nocturne'
 
     container.appendChild(header)
     header.appendChild(headerTextsBox)

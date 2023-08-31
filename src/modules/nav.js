@@ -8,15 +8,15 @@ const createNav = () => {
 
   const home = document.createElement('a')
   home.classList.add('nav__link')
-  home.textContent = 'HOME'
+  home.textContent = 'home'
 
   const menu = document.createElement('a')
   menu.classList.add('nav__link')
-  menu.textContent = 'MENU'
+  menu.textContent = 'menu'
 
   const contact = document.createElement('a')
   contact.classList.add('nav__link','nav__link--span')
-  contact.textContent = 'CONTACT'
+  contact.textContent = 'contact'
 
   container.appendChild(nav)
   nav.appendChild(navLinks)
