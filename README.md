@@ -1,35 +1,12 @@
-# Webpack App Starter
+# RestaurantPage
+Practicing DOM manipulation by dynamically rendering a simple restaurant homepage
 
-Frontend environment for building JavaScript applications
+## What is used:
+- SCSS
+- JavaScript (splitted into modules)
+- HTML
+- Webpack
 
-Includes the following features...
+### <a href="https://rluki99.github.io/RestaurantPage/">Demo APP</a>
 
-- Babel Loader
-- Sass Loader With Dart Sass
-- HTMLWebpackPlugin
-- WebpackDevServer
-- Asset Resource Loader
-- Source Maps
-- Caching
 
-## Usage
-
-Run Dev Server (Port 3000)
-
-```
-  npm run dev
-```
-
-## Build for production
-
-```
-npm run build
-```
-
-## Demo App
-
-The demo app is a very simple Joke generator. Replace with your own code and install other packages as needed
-
-- index.js (main javascript)
-- template.html (template)
-- styles/main.scss (styles)
