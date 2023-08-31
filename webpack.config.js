@@ -1,7 +1,5 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const BundleAnalyzerPlugin =
-  require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
 module.exports = {
   mode: 'development',
@@ -24,6 +22,7 @@ module.exports = {
     hot: true,
     compress: true,
     historyApiFallback: true,
+    watchFiles: ["src/*.html"]
   },
   module: {
     rules: [
@@ -52,7 +51,7 @@ module.exports = {
       title: 'Restaurant Page',
       filename: 'index.html',
       template: 'src/template.html',
+      inject: true
     }),
-    // new BundleAnalyzerPlugin(),
   ],
 }
