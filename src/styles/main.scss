@@ -43,7 +43,7 @@ body {
 	background-position: center;
 	background-size: cover;
 	width: 100%;
-	min-height: 100vh;
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	position: relative;
@@ -142,8 +142,9 @@ body {
 
 .section {
 	color: rgb(39, 39, 39);
-	padding: 50px;
-	margin-bottom: 50px;
+	padding: 30px;
+	margin-bottom: 40px;
+	overflow-y: scroll;
 
 	@include view(small-mobile) {
 		padding: 20px;
@@ -239,5 +240,83 @@ body {
 				order: 0;
 			}
 		}
+	}
+}
+
+.contact {
+	&__header, &__title {
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	&__title {
+		font-size: 50px;
+		color: rgb(126, 111, 25);
+
+		@include view(small-mobile) {
+			font-size: 30px;
+		}
+	}
+
+	&__header {
+		font-size: 35px;
+		font-style: italic;
+
+		@include view(small-mobile) {
+			font-size: 20px;
+		}
+	}
+
+	&__box {
+		margin-block: 80px;
+		display: grid;
+		justify-content: center;
+		grid-template-columns: minmax(200px, 400px) minmax(200px, 400px);
+		row-gap: 70px;
+
+		@include view (mobile) {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	&__box-single {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		font-weight: 600;
+		letter-spacing: 1px;
+		line-height: 1.2;
+
+		&--span {
+			grid-column: span 2;
+
+			@include view (mobile) {
+				grid-column: auto;
+			}
+		}
+	}
+
+	&__box-header {
+		text-align: center;
+		font-size: 30px;
+		text-transform: uppercase;
+		position: relative;
+		margin-bottom: 20px;
+
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: -5px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 80%;
+			height: 3px;
+			background-color: rgb(126, 111, 25);
+		}
+	}
+
+	&__box-info {
+		font-size: 22px;
 	}
 }

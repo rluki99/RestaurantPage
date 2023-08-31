@@ -20,9 +20,7 @@ const createNav = () => {
 
   container.appendChild(nav)
   nav.appendChild(navLinks)
-  navLinks.appendChild(home)
-  navLinks.appendChild(menu)
-  navLinks.appendChild(contact)
+  navLinks.append(home,menu,contact)
 }
 
 export default createNav 
